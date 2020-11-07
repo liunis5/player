@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/player.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/button.css">
+        <script src="js/liyu.js"></script>
+    </head>
+    <body>
+        <div class="music">
+            <audio src="" id="id-music" class="music-audio" data-active="" controls="controls"></audio>
+        </div>
+        <div class="case">
+            <div class="player">
+<!--                页眉-->
+                <div class="header">
+                    <div class="header-search">
+                        <input type="text" id="id-header-input" class="header-search-input" placeholder="搜索歌曲、歌手">
+                        <span></span>
+                    </div>
+                    <img src="img/miao.png" alt="" class="miao">
+                </div>
+<!--                内容 列表区-->
+                <div class="section clearfix">
+<!--                    中间歌曲信息-->
+                    <div class="main column">
+                        <div class="main-title">
+                            <div class="song-title title-left">
+                                <span>歌曲</span>
+                            </div>
+                            <div class="song-title title-centre">
+                                <span>歌手</span>
+                            </div>
+                            <div class="song-title title-right">
+                                <span>时长</span>
+                            </div>
+                        </div>
+                        <div class="main-songlist">
+                            <div class="songlist">
+                                <ul class="comment-list">
+                                    <li>
+                                        <div class="songlist-left song-name">凡心</div>
+                                        <div class="songlist-centre">董真</div>
+                                        <div class="songlist-right song-length">04:01</div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+<!--                    左侧菜单栏-->
+                    <div class="left column">
+                        <ul>
+<!--                            <li>播放列表</li>-->
+                            <li>我的歌单</li>
+                            <li>喜欢的音乐</li>
+                        </ul>
+                    </div>
+<!--                    右侧歌词栏-->
+                    <div class="right column">
+                        <div class="right-lyric">
+                            <div class="right-lyric-inner">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                页脚，播放器控制栏-->
+                <div class="footer">
+<!--                    左侧控制按钮-->
+                    <div class="footer-left">
+                        <span title="上一首" class="last" data-offset='-1' data-action="music_last"></span>
+                        <span title="播放" class="show-button play " data-action="music_play"></span>
+                        <span title="暂停" class="show-button pause active" data-action="music_pause"></span>
+                        <span title="下一首" class="next" data-offset='1' data-action="music_next"></span>
+                    </div>
+<!--                    中间滚动条-->
+                    <div class="footer-centre">
+                        <div class="footer-centre-time">
+                            <span class="centre-name song-name">凡心-董真</span>
+                            <span class="centre-length song-length">04:01</span>
+                            <span class="centre-length">/</span>
+                            <span class="centre-time song-time"></span>
+                        </div>
+                        <div class="footer-centre-progress">
+                            <div class="player-progressbar drag"></div>
+                            <div class="player-slider drag"></div>
+                            <div class="player-buffer"></div>
+                        </div>
+
+                    </div>
+<!--                    右侧音量控制-->
+                    <div class="footer-right">
+                        <span class="mus-1"></span>
+                        <span class="vol-2"></span>
+                        <div class="vol-inner">
+                            <div class="vol-inner-progressbar"></div>
+                            <div class="vol-inner-slider"></div>
+                            <div class="vol-inner-buffer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-mask"></div>
+            </div>
+        </div>
+        <script src="js/HTMLmusic.js"></script>
+        <script src="js/dbDemo.js"></script>
+<!--        <script src="playLrcDemo.js"></script>-->
+        <script src="js/playerDemo.js"></script>
+    </body>
+</html>

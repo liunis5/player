@@ -1,0 +1,151 @@
+
+
+.play {
+
+    /*border-radius: 40px;*/
+    /*border-style: none;*/
+    /*outline: none;*/
+
+
+    cursor: pointer;
+
+    width: 21px;
+    height: 29px;
+    background-position: 0 -0px;
+
+    background-image: url("../img/player.png");
+}
+
+.pause {
+
+    /*outline: none;*/
+    /*border-style: none;*/
+    /*border-radius: 40px;*/
+
+
+    cursor: pointer;
+
+    width: 21px;
+    height: 29px;
+    background-position: -30px 0;
+
+    background-image: url("../img/player.png");
+}
+
+.pause,
+.play {
+    display: inline-block;
+
+
+    position: absolute;
+    top: 50%;
+    left: 47.4%;
+    transform: translateY(-50%);
+
+    text-align: center;
+}
+
+
+.next {
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
+
+    /*outline: none;*/
+    /*border-style: none;*/
+    /*border-radius: 40px;*/
+
+    /*text-align: center;*/
+
+    /*color: #e91e63;*/
+    /*cursor: pointer;*/
+
+    /*transition: 0.5s*/
+
+    width: 19px;
+    height: 20px;
+    background-position: 0 -52px;
+
+    background-image: url("../img/player.png");
+}
+
+.next:hover {
+
+}
+
+
+.last {
+
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+
+    /*outline: none;*/
+    /*border-style: none;*/
+    /*border-radius: 40px;*/
+    /*text-align: center;*/
+    
+    /*color: #e91e63;*/
+    /*cursor: pointer;*/
+
+
+    width: 19px;
+    height: 20px;
+    background-position: 0 -30px;
+
+    background-image: url("../img/player.png");
+}
+
+audio {
+    margin-left: 40%;
+}
+
+.active {
+    display: none;
+}
+
+
+.mus-1 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+
+
+
+    width: 26px;
+    height: 25px;
+    background-position: 0 -205px;
+
+    background-image: url("../img/player.png");
+}
+
+.vol-2 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 74px;
+    transform: translateY(-50%);
+
+
+
+    width: 26px;
+    height: 21px;
+    background-position: 0 -144px;
+
+    background-image: url("../img/player.png");
+}
+
+.miao {
+    left: 85%;
+    height: 125px;
+
+    position: absolute;
+    right: 8%;
+}

@@ -1,0 +1,366 @@
+
+/*控制栏左侧*/
+.footer-left {
+    float: left;
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+/*.footer-left span {*/
+/*    margin: 0 15px;*/
+/*}*/
+
+
+/*.next {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 170px;*/
+/*    transform: translateY(-50%);*/
+
+/*    text-align: center;*/
+/*}*/
+
+/*.last {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50px;*/
+/*    transform: translateY(-50%);*/
+
+/*    text-align: center;*/
+/*}*/
+
+/*.last::before {*/
+/*    content: "<";*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.next::before {*/
+/*    content: ">";*/
+/*    font-size: 14px;*/
+/*}*/
+
+
+
+/*.play::before {*/
+/*    content: "|>";*/
+/*    font-size: 35px;*/
+/*}*/
+
+/*.pause::before {*/
+/*    content: "||";*/
+/*    font-size: 30px;*/
+/*}*/
+
+
+
+
+/*控制栏中间*/
+.footer-centre {
+    float: left;
+    width: 650px;
+    height: 100%;
+    position: relative;
+}
+
+.footer-centre-progress {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 90%;
+    height: 25px;
+    left: 40px;
+    /*background-color: pink;*/
+    /*margin: 0 0 0 40px;*/
+    cursor: pointer;
+}
+
+.player-progressbar {
+    width: 0%;
+    height: 3px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 1;
+}
+
+.player-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 2;
+
+    left: -7.5px;
+
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.player-buffer {
+    width: 0%;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: rgba(255,255,255,0.4);
+    transition: width 2s;
+}
+
+/*控制栏右侧*/
+.footer-right {
+    float: left;
+    width: 250px;
+    height: 100%;
+    position: relative;
+}
+
+.vol-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50%;
+    height: 25px;
+    left: 100px;
+    /*background-color: pink;*/
+    /*margin: 0 0 0 40px;*/
+    cursor: pointer;
+}
+
+.vol-inner-progressbar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 1;
+
+    width: 0%;
+    height: 3px;
+    background: white;
+}
+
+.vol-inner-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 2;
+
+    left: -7.5px;
+
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.vol-inner-buffer {
+    width: 100%;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.4);
+}
+
+/*页眉*/
+.header-search {
+    height: 40px;
+    padding: 0 40px 0 22px;
+    background-color: rgba(255,255,255,.1);
+    overflow: hidden;
+    border-radius: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%)
+}
+
+.header-search-input {
+    width: 238px;
+    height: 20px;
+    padding: 10px 0;
+    outline: 0;
+    border: 0;
+    transition: width .6s;
+
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+/*内容左侧栏*/
+.left ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+
+    padding-left: 60px;
+}
+
+.left ul li {
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 67px;
+    cursor: pointer;
+
+    list-style-type: none;
+}
+
+/*内容中间区标题*/
+.main-title {
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.song-title {
+    float: left;
+    height: 100%;
+}
+
+.song-title span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.title-left {
+    width: 50%;
+}
+.title-right {
+    width: 20%;
+}
+.title-centre {
+    width: 25%;
+}
+
+/*内容中间区列表*/
+.main-songlist {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.songlist {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.comment-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.comment-list li {
+    color: #fff;
+    height: 50px;
+    position: relative;
+    line-height: 50px;
+
+
+    list-style-type: none;
+}
+
+.songlist-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+
+    color: #fefefe;
+    cursor: default;
+
+    overflow: hidden;
+}
+
+.songlist-centre {
+    float: left;
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+
+.songlist-right {
+    float: left;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer-centre-time {
+    width: 90%;
+    color: #fefefe;
+
+    position: absolute;
+    left: 40px;
+    top: 17px;
+}
+
+.footer-centre-time span {
+    display: inline-block;
+}
+
+.centre-time {
+    float: right;
+}
+
+.centre-length  {
+    /*position: absolute;*/
+    /*right: 0;*/
+    color: #959595;
+    float: right;
+}
+
+/*歌词栏*/
+.right-lyric {
+    overflow: hidden;
+    height: 69%;
+
+    /* position: absolute;
+    top: 11%; */
+    margin-top: 56px;
+}
+
+.right-lyric-inner {
+    transition: transform 1.5s ease-out 0s;
+    transform: translateY(0px);
+
+    text-align: center;
+}
+
+.right-lyric-inner p {
+    color: #999;
+    margin: 0;
+    line-height: 30px;
+}
+.right-lyric-inner p.on {
+    color: #fff;
+}

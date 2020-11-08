@@ -26,7 +26,7 @@ body {
 
 .player {
     width: 1200px;
-    margin: 50px auto;
+    margin: 0 20px;
     /*background: lightpink;*/
     /*border: 1px solid #000;*/
 }
